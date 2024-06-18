@@ -1,5 +1,12 @@
 fila = []
 
+while True:
+    elemento = input("Digite um elemento para adicionar à lista (ou 'parar' para terminar): ")
+    if elemento == 'pare':
+        break
+    fila += [elemento]
+
+print("Lista completa:", fila)
 
 def adicionar_cliente(cliente):
     fila.append(cliente)
@@ -12,13 +19,6 @@ def atender_cliente():
         print(f"Cliente {cliente_atendido} atendido.")
     else:
         print("Não há clientes na fila para atender.")
-
-
-adicionar_cliente("João")
-adicionar_cliente("Maria")
-adicionar_cliente("Pedro")
-adicionar_cliente("Romulo")
-adicionar_cliente("Mario")
 
 atender_cliente()
 atender_cliente()
