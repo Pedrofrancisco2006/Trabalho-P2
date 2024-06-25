@@ -1,17 +1,17 @@
 def eh_primo(numero):
-    # Verifica se o número é maior que 1
+    
     if numero <= 1:
         return False
     
-    # Verifica se o número é divisível por algum número além de 1 e ele mesmo
+   
     for i in range(2, int(numero**0.5) + 1):
         if numero % i == 0:
             return False
     
-    # Se não encontrou nenhum divisor além de 1 e ele mesmo, então é primo
+   
     return True
 
-# Função para entrada do usuário e verificação de número primo
+
 def main():
     while True:
         try:
